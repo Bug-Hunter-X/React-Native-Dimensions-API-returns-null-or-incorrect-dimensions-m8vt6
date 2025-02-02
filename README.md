@@ -1,0 +1,3 @@
+# React Native Dimensions API Returns Null or Incorrect Dimensions
+
+This repository demonstrates a common bug in React Native applications related to the `Dimensions` API.  The problem arises when trying to access screen dimensions too early in the component lifecycle, resulting in `null` or incorrect dimension values. This can cause unexpected layout issues.  The solution implemented here uses the `useEffect` hook with an empty dependency array to ensure that the dimensions are fetched after the component has fully mounted and the layout is established. This ensures correct dimension values are always used for layout calculations.
